@@ -1,0 +1,28 @@
+.box {
+  transition: .5s;
+  cursor: pointer; }
+  .box:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); }
+
+.box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 40px;
+  right: 40px; }
+
+.box {
+  width: 100%; }
+
+.box {
+  height: 30px; }
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+@mixin float {
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-20px);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    }
+}
+
+@mixin position($top:auto,$left:auto,$bottom:auto,$right:auto) {
+    position:absolute;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+}
+
+@mixin width($width:null,$max-width:null,$min-width:null) {
+    width: $width;
+    max-width: $max-width;
+    min-width: $min-width;
+}
+
+@mixin height($height:null,$max-height:null,$min-height:null) {
+    height: $height;
+    max-height: $max-height;
+    min-height: $min-height;
+}
+
+@mixin flex($justify-content:flex-start,$align-items:flex-start,$flex-wrap:no-wrap,$flex-direction:row) {
+    display:flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+    flex-direction: $flex-direction;
+}
